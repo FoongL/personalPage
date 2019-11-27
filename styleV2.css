@@ -75,7 +75,6 @@ html {
   font-size: 30px;
   letter-spacing: 8px;
   text-transform: uppercase;
-  /* text-decoration: white underline; */
 }
 
 .ptext .border {
@@ -94,9 +93,7 @@ html {
 }
 
 #welcome p {
-  /* background-color:rgb(70, 70, 70,0.5); */
   padding: 15px;
-  /* border: 1.5px solid rgb(129, 129, 129); */
   border-radius: 5px;
 }
 
@@ -163,15 +160,12 @@ h2 {
 .not-showing {
   opacity: 0;
   transform: translateX(-20px);
-  /* transition: all 0.9s ease-in-out;  */
 }
 
 .anti-showing {
   opacity: 0;
   transform: translateX(20px);
   transform: translateY(-20px);
-
-  /* transition: all 0.9s ease-in-out;  */
 }
 
 .is-showing {
@@ -439,5 +433,13 @@ h2 {
   .fisherman p {
     font-size: 12px;
     padding: 0;
-  }
+ 
+ }
+ .pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+
+  background-attachment: initial;
+}
 }

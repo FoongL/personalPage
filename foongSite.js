@@ -16,7 +16,6 @@ $('.surprise').hide()
 function parallax() {    
     var wScroll = $(window).scrollTop()
     $('.parallax--bg').css('background-position','center '+(-wScroll*0.3)+'px')
-    // $('.parallax--last').css('background-position','center '+(-wScroll*0.125)+'px')
 }
 
 function parallaxSecond() {    
@@ -42,20 +41,6 @@ function parallaxsmall() {
     let poffset = ($('.parallax--small').offset().top)
     $('.parallax--small').css('background-position','center '+((-wScroll+poffset)*0.4)+'px')
 }
-// function parallax() {    
-//     var wScroll = $(window).scrollTop()
-//     for (let pimg in $('.parallax--bg')){
-//         parapic = $('.parallax--bg')[pimg]
-//         paraid = '#'+parapic.id
-//         if (paraid !== undefined){
-//             console.log(paraid)
-//         let poffset = ($(paraid).offset().top)
-//         if (paraid === '#contactMe'){
-//             $('.parallax--bg').css('background-position','center '+((-wScroll+poffset)*0.125)+'px')
-//         } else{
-//    $('.parallax--bg').css('background-position','center '+((-wScroll)*0.125)+'px')
-// }}}}
-
 
 function navFlow(){
 var wScroll = $(window).scrollTop()
@@ -64,7 +49,6 @@ var wScroll = $(window).scrollTop()
         } else{
             $('.navbar').slideUp()
         }
-        // $('.menu label.menu-toggle').css('height',+(60*(wScroll / 750))+'px')
     
 }
 function surprise(){
@@ -74,15 +58,13 @@ function surprise(){
         } else{
             $('.surprise').fadeOut()
         }
-        // $('.menu label.menu-toggle').css('height',+(60*(wScroll / 750))+'px')
-    
+ 
 }
 
 function animateProjects(){
     var wScroll = $(window).scrollTop()
     if (wScroll > $('#myWorks').offset().top - ($(window).height() / 1.2)){
         $('#myWorks .projects').each(function(i){
-            // $('#myWorks .projects').removeClass('not-showing');
            setTimeout(function(){ $('#myWorks .projects').eq(i).addClass('is-showing');
            }, (700 * (Math.exp(i*0.14)))-700);
         })
