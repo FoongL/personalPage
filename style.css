@@ -1,0 +1,256 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  scroll-behavior: smooth;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax--bg {
+  transition: initial;
+}
+
+.pimg1 {
+  background-image: url("/about_me_site/personalSite/assets/images/wookBol.jpg");
+  min-height: 100%;
+  opacity: 0.9;
+}
+
+.pimg2 {
+  background-image: url("/about_me_site/personalSite/assets/images/yangshuo\ final-1678-2.jpg");
+  min-height: 65%;
+  opacity: 0.8;
+}
+
+.pimg3 {
+  background-image: url("/about_me_site/personalSite/assets/images/waterfall.jpg");
+  min-height: 70%;
+  opacity: 0.9;
+}
+
+.pimg4 {
+  background-image: url("/about_me_site/personalSite/assets/images/carBol.jpg");
+  min-height: 100%;
+  opacity: 0.9;
+ 
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  box-shadow: 9px 0px 21px 12px rgba(0, 0, 0, 0.8);
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.photoBackground {
+    height: 95%;
+    width: 120%;
+    background-image: url('/about_me_site/personalSite/assets/images/Foong.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top:70px; 
+    box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.28);
+    /* opacity: 0.75 */
+}
+#welcome .row{
+    display:flex;
+    align-content:bottom;
+}
+
+#welcome .forBackground{
+  background-color: rgb(85, 96, 99) ;
+  padding: 30px;
+  box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.28);
+}
+/* rgba(97, 97, 97, 0.95) */
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: rgb(17, 17, 17, 0.35);
+  color: #fff;
+  padding: 50px 60px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+#welcome p{
+  /* background-color:rgb(70, 70, 70,0.5); */
+  padding: 15px;
+  /* border: 1.5px solid rgb(129, 129, 129); */
+  border-radius: 5px
+}
+
+h4 {
+  text-align: center;
+  padding: 175px 80px;
+  color: rgb(59, 59, 59) !important;
+  font-size: 18px;
+  font-weight:bold;
+}
+
+.navbar {
+  max-height: 60px;
+  background-color: rgb(88, 95, 110) !important;
+  box-shadow: 2px 13px 33px -8px rgba(0,0,0,0.74);
+}
+
+.navbar a{
+    color:white!important;
+
+}
+
+.navbar .nav-link{
+    letter-spacing: 2px !important;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+}
+.navbar .navbar-brand{
+    letter-spacing: 2px !important;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+ h2{
+  font-family: 'Montserrat', sans-serif;
+  /* text-decoration: underline; */
+  font-weight:bolder;
+}
+.row {
+  margin-top: 20px;
+}
+
+.projects {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 275px;
+  border-radius: 10px;
+  opacity: 0.85;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+.projects img{
+  height: 200px;
+  width: 275px;
+  box-shadow: 10px 10px 28px -3px rgba(0,0,0,0.28);
+  object-fit: cover;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.projects:hover > img{
+  transform:scale(1.05)
+}
+
+.not-showing{
+  opacity:0;
+  transform: translateX(-20px);
+  /* transition: all 0.9s ease-in-out;  */
+}
+
+.anti-showing{
+  opacity:0;
+  transform: translateX(20px);
+  transform: translateY(-20px);
+  
+  /* transition: all 0.9s ease-in-out;  */
+}
+
+.is-showing{
+  opacity:1;
+  transform: translateX(0px);
+  transition: all 0.6s ease-in-out; 
+}
+
+.now-showing{
+  opacity:1;
+  transform: translateX(0px);
+  transition: all 0.8s ease-in-out; 
+}
+
+.overlay {
+  width: 275px;
+  height: 200px;
+  background-color: rgba(107, 124, 139, 0.7);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.overlay h3 {
+  font-size: 18px;
+  color: rgb(196, 193, 193);
+  font-weight: normal;
+}
+
+.overlay h4 {
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+}
+
+ .overlay:hover {
+  opacity: 1;
+  transform:scale(1.05)
+  /* transition: background-color;
+    transition-duration: 0.9s */
+}
+
+.overlay h6{
+    font-weight:bold;
+    letter-spacing: 1.5px;
+    text-decoration: underline
+}
+.overlay p{
+    font-size: 14px;
+    padding:7px ;
+    padding-top: 0;
+    padding-bottom:0
+}
+
