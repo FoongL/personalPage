@@ -81,6 +81,7 @@ html {
   background-color: rgb(17, 17, 17, 0.45);
   color: #fff;
   padding: 50px 60px;
+  border:none !important;
 }
 .ptext h3 {
   font-size: 15px;
@@ -154,7 +155,7 @@ h2 {
 }
 
 .projects:hover > img {
-  transform: scale(1.03);
+  transform: scale(1.015)  ;
 }
 
 .not-showing {
@@ -212,7 +213,7 @@ h2 {
 
 .overlay:hover {
   opacity: 1;
-  transform: scale(1.03);
+  transform: scale(1.015);
   /* transition: background-color;
     transition-duration: 0.9s */
 }
@@ -238,7 +239,7 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   display: grid;
-  grid-template-columns: 4fr 4fr 4fr 4fr;
+  grid-template-columns: 9fr 10fr 11fr 12fr;
   grid-template-rows: 550px;
   grid-template-areas: "firstPart secPart thirdPart fourthPart";
 }
@@ -304,8 +305,7 @@ h2 {
   padding-left: auto;
   display: grid;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
-  color: black;
-  grid-gap: 15px;
+  grid-gap: 10px;
   grid-template-rows: 125px 125px 125px 125px 125px 125px;
   grid-template-areas:
     "duboo duboo drone drone wookie wookie"
@@ -330,9 +330,9 @@ h2 {
 .wookie {
   grid-area: wookie;
 }
-.wookie img {
+/* .wookie img {
   max-height: 100%;
-}
+} */
 .fisherman {
   grid-area: fisherman;
 }
@@ -435,7 +435,7 @@ h2 {
     padding: 0;
  
  }
- .pimg1,
+.pimg1,
 .pimg2,
 .pimg3,
 .pimg4 {
