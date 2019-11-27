@@ -26,25 +26,25 @@ html {
 }
 
 .pimg1 {
-  background-image: url("/assets/images/wookBol.jpg");
+  background-image: url("./assets/images/wookBol.jpg");
   min-height: 100%;
   opacity: 0.9;
 }
 
 .pimg2 {
-  background-image: url("/assets/images/yangshuo\ final-1678-2.jpg");
+  background-image: url("./assets/images/yangshuo\ final-1678-2.jpg");
   min-height: 65%;
   opacity: 0.8;
 }
 
 .pimg3 {
-  background-image: url("/assets/images/DSC_6208.jpg");
+  background-image: url("./assets/images/DSC_6208.jpg");
   min-height: 70%;
   opacity: 0.9;
 }
 
 .pimg4 {
-  background-image: url("/assets/images/carBol.jpg");
+  background-image: url("./assets/images/carBol.jpg");
   min-height: 100%;
   opacity: 0.9;
 }
@@ -68,7 +68,7 @@ html {
 .photoBackground {
   height: 95%;
   width: 120%;
-  background-image: url("/assets/images/Foong.jpg");
+  background-image: url("./assets/images/Foong.jpg");
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -259,7 +259,7 @@ h2 {
 } */
 .gridOneontainer {
   width: 100%;
-  background-image: url("/assets/images/Revisits-6687.jpg");
+  background-image: url("./assets/images/Revisits-6687.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.8;
@@ -392,7 +392,7 @@ h2 {
 @media (max-width: 950px) {
   .gridOneontainer {
     width: 100%;
-    background-image: url("/assets/images/veritcal.jpg");
+    background-image: url("./assets/images/veritcal.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.6;
