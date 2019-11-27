@@ -8,6 +8,7 @@ $(window).scroll(function(){
     parallaxThird()
     parallaxlast()
     animateWelcome()
+    parallaxsmall()
 });
 $('.navbar').hide()
 $('.surprise').hide()
@@ -34,6 +35,12 @@ function parallaxlast() {
     var wScroll = $(window).scrollTop()
     let poffset = ($('.parallax--last').offset().top)
     $('.parallax--last').css('background-position','center '+((-wScroll+poffset)*0.3)+'px')
+}
+
+function parallaxsmall() {    
+    var wScroll = $(window).scrollTop()
+    let poffset = ($('.parallax--small').offset().top)
+    $('.parallax--small').css('background-position','center '+((-wScroll+poffset)*0.4)+'px')
 }
 // function parallax() {    
 //     var wScroll = $(window).scrollTop()
