@@ -77,7 +77,7 @@ html {
   text-transform: uppercase;
 }
 
-.ptext .border {
+.ptext  {
   background-color: rgb(17, 17, 17, 0.45);
   color: #fff;
   padding: 50px 60px;
@@ -89,9 +89,8 @@ html {
   text-decoration: rgb(151, 151, 151) underline;
 }
 
-.ptext .border.trans {
-  background-color: transparent;
-}
+
+
 
 #welcome p {
   padding: 15px;
